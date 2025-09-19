@@ -36,66 +36,80 @@ Lightweight & Easy to Learn → ideal for DSA practice, interviews, and academic
 Ready-made examples → included demos for:
 
 📘 Basic graph usage
-
 👥 Friend recommendation (social graph use case)
-
 📅 Task scheduler (topological sorting)
 
-🚀 Getting Started
-1. Clone the Repository
-git clone https://github.com/<your-username>/GraphSTLDemo.git
-cd GraphSTLDemo
 
-2. Build with CMake (Recommended)
+🚀 Getting Started
+There are three ways to use GraphSTL locally in your C++ projects.
+
+1️⃣ Header-Only Include (Recommended for beginners)
+
+1 - Since GraphSTL is header-only, you don’t need to build the library.
+2 - Download GraphSTL.h from this repository.
+3 - Place it inside an include folder in your project directory.
+4 - Include it in your C++ file
+
+Exmaple:-
+#include "GraphSTL.h"
+int main() {
+    Graph<int> g(false); // undirected
+    g.addEdge(0, 1);
+    g.addEdge(1, 2);
+
+    g.BFS(0);
+    g.shortestPath(0);
+    return 0;
+}
+
+5 - Folder structure example:
+MyProject/
+├─ include/
+│  └─ GraphSTL.h
+└─ temp.cpp
+
+6 - Compile and run manually:
+        g++ temp.cpp -Iinclude -o temp.exe
+        ./temp.exe
+
+2️⃣ Using CMake (for multi-file projects)
+You can include GraphSTL in larger projects using CMake.
+
+Folder structure:
+MyProject/
+├─ CMakeLists.txt
+├─ include/
+│  └─ GraphSTL.h
+└─ src/
+   └─ main.cpp
+
+
+CMakeLists.txt example:
+
+cmake_minimum_required(VERSION 3.15)
+project(MyProject)
+
+set(CMAKE_CXX_STANDARD 17)
+
+include_directories(include)
+
+add_executable(main src/main.cpp)
+
+
+Build and run:
 mkdir build
 cd build
 cmake ..
 cmake --build .
 
 
-After building, you’ll find executables in build/:
+Executables will appear in 
+-----> build/Debug/ (Windows)/
+-----> build/ (Linux/macOS).
 
-graph_basic
-
-friend_reco
-
-task_scheduler
-
-Run one:
-
-./graph_basic
-
-📖 Example Usage
-
-Here’s a minimal program using GraphSTL:
-
-#include "GraphSTL.h"
-
-int main() {
-    // Create an undirected graph with int nodes
-    Graph<int> g(false);
-
-    g.addEdge(0, 1);
-    g.addEdge(0, 2);
-    g.addEdge(1, 3);
-
-    cout << "BFS starting from node 0: ";
-    g.BFS(0);
-
-    cout << "\nShortest paths from node 0:\n";
-    g.shortestPath(0);
-
-    return 0;
-}
-
-Compile manually without CMake
-g++ temp.cpp -Iinclude -o temp
-./temp
-
-🎥 Demo Video
-
-Watch the usage demo on YouTube:
-
+Run:
+./Debug/main.exe   # Windows
+./main             # Linux/macOS
 
 📂 Project Structure
 GraphSTLDemo/
@@ -110,19 +124,14 @@ GraphSTLDemo/
 ├─ LICENSE                 # MIT License
 └─ .gitignore              # Ignored files (build artifacts etc.)
 
+
 💡 Use Cases
-
 Some example applications of GraphSTL:
-
-Social Networks → friend recommendation using graph traversal
-
-Project Planning → task scheduling with topological sort
-
-Navigation Systems → shortest path algorithms for routes
-
-Computer Science Education → easy to learn BFS, DFS, Dijkstra
-
-Competitive Programming → quick plug-and-play graph utilities
+1. Social Networks → friend recommendation using graph traversal
+2.Project Planning → task scheduling with topological sort
+3. Navigation Systems → shortest path algorithms for routes
+4.Computer Science Education → easy to learn BFS, DFS, Dijkstra
+5.Competitive Programming → quick plug-and-play graph utilities
 
 🤝 Contributing
 
