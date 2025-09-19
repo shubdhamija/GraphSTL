@@ -11,5 +11,5 @@ int main() {
     g.addEdge("Testing", "Deployment");
 
     cout << "Task order (Topological Sort):\n";
-    g.topoSort();
+    g.topologicalSort();
 }

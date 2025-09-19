@@ -1,7 +1,15 @@
 #ifndef GRAPHSTL_H
 #define GRAPHSTL_H
 
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
+#include <queue>
+#include <stack>
+#include <unordered_map>
+#include <unordered_set>
+#include <limits>
+#include <string>
+#include <utility>
 using namespace std;
 
 template <typename T>
