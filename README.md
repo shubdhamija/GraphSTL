@@ -46,8 +46,11 @@ There are three ways to use GraphSTL locally in your C++ projects.
 1️⃣ Header-Only Include (Recommended for beginners)
 
 1 - Since GraphSTL is header-only, you don’t need to build the library.
+
 2 - Download GraphSTL.h from this repository.
+
 3 - Place it inside an include folder in your project directory.
+
 4 - Include it in your C++ file
 
 Exmaple:-
@@ -128,8 +131,11 @@ GraphSTLDemo/
 💡 Use Cases
 Some example applications of GraphSTL:
 1. Social Networks → friend recommendation using graph traversal
+
 2.Project Planning → task scheduling with topological sort
+
 3. Navigation Systems → shortest path algorithms for routes
+   
 4.Computer Science Education → easy to learn BFS, DFS, Dijkstra
 5.Competitive Programming → quick plug-and-play graph utilities
 
