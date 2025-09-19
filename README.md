@@ -64,22 +64,27 @@ int main() {
     g.BFS(0);
     g.shortestPath(0);
     return 0;
-}```
+}
+```
 
 5 - Folder structure example:
+```
 MyProject/
 ├─ include/
 │  └─ GraphSTL.h
 └─ temp.cpp
+```
 
 6 - Compile and run manually:
-        g++ temp.cpp -Iinclude -o temp.exe
-        ./temp.exe
+```bash
+g++ temp.cpp -Iinclude -o temp.exe
+./temp.exe
+```
 
 2️⃣ Using CMake (for multi-file projects)
-You can include GraphSTL in larger projects using CMake.
-
-Folder structure:
+ i) - You can include GraphSTL in larger projects using CMake.
+ 
+ii) - Folder structure:
 MyProject/
 ├─ CMakeLists.txt
 ├─ include/
@@ -88,8 +93,9 @@ MyProject/
    └─ main.cpp
 
 
-CMakeLists.txt example:
+iii) - CMakeLists.txt example:
 
+```txt
 cmake_minimum_required(VERSION 3.15)
 project(MyProject)
 
@@ -98,24 +104,32 @@ set(CMAKE_CXX_STANDARD 17)
 include_directories(include)
 
 add_executable(main src/main.cpp)
+```
 
 
-Build and run:
+iv) - Build and run:
+``` bash
 mkdir build
 cd build
 cmake ..
 cmake --build .
+```
 
 
-Executables will appear in 
------> build/Debug/ (Windows)/
------> build/ (Linux/macOS).
+v) - Executables will appear in 
+``` bash
+build/Debug/ (Windows)/
+build/ (Linux/macOS).
+```
 
-Run:
+vi) -  Run:
+``` bash
 ./Debug/main.exe   # Windows
 ./main             # Linux/macOS
+```
 
 📂 Project Structure
+```
 GraphSTLDemo/
 ├─ include/
 │  └─ GraphSTL.h          # The library (header-only)
@@ -127,7 +141,7 @@ GraphSTLDemo/
 ├─ README.md               # This file
 ├─ LICENSE                 # MIT License
 └─ .gitignore              # Ignored files (build artifacts etc.)
-
+```
 
 💡 Use Cases
 Some example applications of GraphSTL:
