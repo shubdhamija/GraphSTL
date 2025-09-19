@@ -151,13 +151,13 @@ GraphSTLDemo/
 Some example applications of GraphSTL:
 1. Social Networks → friend recommendation using graph traversal
 
-2.Project Planning → task scheduling with topological sort
+    2.Project Planning → task scheduling with topological sort
 
 3. Navigation Systems → shortest path algorithms for routes
 
-4.Computer Science Education → easy to learn BFS, DFS, Dijkstra
+    4.Computer Science Education → easy to learn BFS, DFS, Dijkstra
 
-5.Competitive Programming → quick plug-and-play graph utilities
+    5.Competitive Programming → quick plug-and-play graph utilities
 
 🤝 Contributing
 
