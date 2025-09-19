@@ -54,6 +54,7 @@ There are three ways to use GraphSTL locally in your C++ projects.
 4 - Include it in your C++ file
 
 Exmaple:-
+```cpp
 #include "GraphSTL.h"
 int main() {
     Graph<int> g(false); // undirected
@@ -63,7 +64,7 @@ int main() {
     g.BFS(0);
     g.shortestPath(0);
     return 0;
-}
+}```
 
 5 - Folder structure example:
 MyProject/
