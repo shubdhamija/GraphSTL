@@ -87,12 +87,14 @@ g++ temp.cpp -Iinclude -o temp.exe
  i) - You can include GraphSTL in larger projects using CMake.
  
 ii) - Folder structure:
+```
 MyProject/
 ├─ CMakeLists.txt
 ├─ include/
 │  └─ GraphSTL.h
 └─ src/
    └─ main.cpp
+```
 
 
 iii) - CMakeLists.txt example:
