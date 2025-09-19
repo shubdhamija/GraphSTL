@@ -41,6 +41,7 @@ Ready-made examples → included demos for:
 
 
 🚀 Getting Started
+
 There are three ways to use GraphSTL locally in your C++ projects.
 
 1️⃣ Header-Only Include (Recommended for beginners)
@@ -82,6 +83,7 @@ g++ temp.cpp -Iinclude -o temp.exe
 ```
 
 2️⃣ Using CMake (for multi-file projects)
+
  i) - You can include GraphSTL in larger projects using CMake.
  
 ii) - Folder structure:
@@ -152,6 +154,7 @@ Some example applications of GraphSTL:
 3. Navigation Systems → shortest path algorithms for routes
    
 4.Computer Science Education → easy to learn BFS, DFS, Dijkstra
+
 5.Competitive Programming → quick plug-and-play graph utilities
 
 🤝 Contributing
